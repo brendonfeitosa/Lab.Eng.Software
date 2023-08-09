@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana 1</title>
 </head>
+
 <body>
     <h1>Atividade da Semana 1</h1>
-    <a href="index.html">Voltar!</a>
+
+    <script>
+        /* document.write("Olá Mundo!"); */
+    </script>
+
+    <script>
+        /*   let nome = prompt("Digite seu nome: ", "");
+          if(confirm("Quer ver seu nome?")){
+              alert("Seu nome é: " + nome);
+          } */
+    </script>
+
+    <script>
+        /*  for(i=1; i <= 6; i++){
+             document.write("<h" + i + ">Olá sala!</h" + i + ">");
+         } */
+    </script>
+
+    <h2>Exercicios</h2>
+
+    <!-- <h3>Exercicio 1</h3>
+
+    <script>
+        let dado = prompt("Digite alguma informação: ");
+        console.log(dado);
+        document.write("O dado digitado {" + typeof(dado) + "} é Number!");
+        if(confirm("Deseja verificar o tipo de dado?")){
+            if(typeof(dado) == Number){
+                document.write("O dado digitado " + dado + "é Number!");
+            }
+            else if(typeof(dado) == String){
+                document.write("O dado digitado " + dado + "é String!");
+            }
+            else if(typeof(dado) == Boolean){
+                document.write("O dado digitado " + dado + "é Boolean!");
+            }
+            else if(typeof(dado) == Object){
+                document.write("O dado digitado " + dado + "é Object!");
+            }
+            else if(typeof(dado) == undefined){
+                document.write("O dado digitado " + dado + " é Undefined!");
+            }
+            else {
+                document.write("Obrigado por visitar esta página!")
+            }
+        }
+    </script> -->
+    <h3>Exercicio 2</h3>
+    <!--  <script>
+        let numero = prompt("Digite um número inteiro: ");
+        
+        if(confirm(console.log(numero) == Number)){
+            for(i = 1; i <= numero; i++){
+                if(numero % i == 0){
+                    divisores++;
+                }
+            }
+            if(divisores == 2){
+                alert("O número é primo!");
+            }else{
+                alert("O número NÃO é primo!");
+            }
+        }
+    </script> -->
+
+    <!-- <h3>Exercicio 3</h3>
+    <script>
+        let num = prompt("Digite um número inteiro positivo: ")
+        if(isNaN(num)){
+            prompt("Valor invalido! Digite um número inteiro positivo: ");
+        }
+        else{
+            if(num % 2 == 0){
+                alert("Número par!");
+            }
+            else{
+                alert("Número impar!");
+            }
+        }
+    </script> -->
+
+    <h3>Exercicio 4</h3>
+    <script>
+        let num = prompt("Digite um número inteiro positivo: ");
+        if (isNaN(num)) {
+            prompt("Valor invalido! Digite um número inteiro positivo: ");
+        }
+        else {
+            let proximo;
+            let anterior;
+            let resultado;
+            for (let i = 0; i <= num; i++) {
+                if (i == 1) {
+                    proximo = 0;
+                }
+                else if(i == 2){
+                    anterior = 1;
+                }
+                else {
+                    resultado = proximo + anterior;
+                   alert("Sequência Fibonacci " + resultado);
+                    proximo = anterior;
+                    anterior = resultado;
+                }
+            }
+        }
+    </script>
+
+
+    <br>
+    <br>
+    <a href="index.html"><button>Voltar!</button></a>
 </body>
+
 </html>
