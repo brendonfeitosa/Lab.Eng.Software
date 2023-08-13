@@ -4,29 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Exercício 3</title>
 </head>
 
 <body>
-    <h3>Exercicio 3</h3>
-    <script>
-        let num = prompt("Digite um número inteiro positivo: ")
-        if (isNaN(num)) {
-            prompt("Valor invalido! Digite um número inteiro positivo: ");
-        }
-        else {
-            if (num % 2 == 0) {
-                alert("O número digitado é par!");
+    <div class="index">
+        <h3>EXERCÍCIO 3</h3>
+        <script>
+            let num = prompt("Digite um número inteiro positivo: ")
+            if (isNaN(num)) {
+                prompt("Valor invalido! Digite um número inteiro positivo: ");
             }
             else {
-                alert("O número digitado é impar!");
+                if (num % 2 == 0) {
+                    alert("O número digitado é par!");
+                }
+                else {
+                    alert("O número digitado é impar!");
+                }
             }
-        }
-    </script>
-    <br>
-    <a href="ex03.html"><button>Recarregar!</button></a>
-    <br><br>
-    <a href="semana1.html"><button>Menu</button></a>
+        </script>
+        <a href="ex03.html"><button>Recarregar!</button></a>
+        <br><br>
+        <a href="semana1.html"><button>Menu</button></a>
+    </div>
 </body>
 
 </html>
