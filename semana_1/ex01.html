@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+
+<body>
+    <h3>Exercicio 1</h3>
+
+    <script>
+        let dado = prompt("Digite alguma informação: ");
+        if (confirm("Deseja verificar o tipo de dado?")) {
+            if (dado == "") {
+                document.write("A informação digitada é do tipo Undefined");
+            }
+            else if (dado === "true" || dado === "false") {
+                document.write("A informação digitada é do tipo Boolean");
+            }
+            else if (isNaN(dado)) {
+                document.write("A informação digitada é do tipo String");
+            }
+            else if (!isNaN(dado)) {
+                document.write("A informação digitada é do tipo Number");
+            }
+            else {
+                document.write("Obrigado por visitar esta página!")
+            }
+        }
+
+    </script>
+    <br>
+    <a href="ex01.html"><button>Recarregar!</button></a>
+    <br><br>
+    <a href="semana1.html"><button>Menu</button></a>
+</body>
+
+</html>
