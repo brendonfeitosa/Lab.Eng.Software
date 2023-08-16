@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Semana 2</title>
+</head>
+
+<body>
+    <div class="index">
+        <h2>EXERCÍCIO 1</h2>
+        <hr>
+        <br>
+        <label for="dado">Insira um dado:</label>
+        <br>
+        <input type="text" id="dado" name="dado">
+        <br><br>
+        <button onclick="ex1()">Inserir</button>
+        <ul id="lista">
+
+        </ul>
+    </div>
+
+    <script>
+        let vetDados = [];
+        function ex1() {
+            let dado = document.getElementById("dado").value;
+            let confirmacao = confirm("Deseja incluir um novo dado?");
+            if (confirmacao) {
+
+                vetDados.push(dado);
+                vetDados.sort();
+
+                for (let i in vetDados) {
+                    let li = document.createElement("li");
+                    let exibir = document.createTextNode(vetDados[i]);
+                    li.appendChild(exibir);
+                    document.getElementById("lista").appendChild(li);
+                }
+                console.log(vetDados);
+                document.getElementById("dado").value = "";
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
