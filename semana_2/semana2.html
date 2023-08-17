@@ -32,7 +32,7 @@
 
                 vetDados.push(dado);
                 vetDados.sort();
-
+                document.getElementById("lista").innerHTML = "";
                 for (let i in vetDados) {
                     let li = document.createElement("li");
                     let exibir = document.createTextNode(vetDados[i]);
