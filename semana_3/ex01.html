@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Semana 3</title>
+</head>
+
+<body>
+    <div class="index">
+        <h2>EXERCÍCIO 1</h2>
+        <hr>
+        <br>
+        <p id="mostrardata">
+
+        </p>
+
+        
+
+        <br>
+        <a id="data"><button>Mostrar data</button></a>
+        <br><br>
+        <a href="semana3.html"><button>Menu</button></a>
+        <script>
+            
+            document.getElementById("data").addEventListener("click", mostrarData);
+
+            function mostrarData() {
+                let hoje = new Date();
+                let dia_semana = hoje.getDay();
+                let dia = hoje.getDate();
+                let mes = hoje.getMonth();
+                let ano = hoje.getFullYear();
+                
+                let dsemana;
+                let mes_extenso;
+                let dia2;
+
+                // tratando dia da semana
+                if(dia_semana == 0) {
+                    dsemana = "Domingo";
+                }
+                else if(dia_semana == 1) {
+                    dsemana = "Segunda-Feira";
+                }
+                else if(dia_semana == 2) {
+                    dsemana = "Terça-Feira";
+                }
+                else if(dia_semana == 3) {
+                    dsemana = "Quarta-Feira";
+                }
+                else if(dia_semana == 4) {
+                    dsemana = "Quinta-Feira";
+                }
+                else if(dia_semana == 5) {
+                    dsemana = "Sexta-Feira";
+                }
+                else if(dia_semana == 6) {
+                    dsemana = "Sábado";
+                }
+
+                //tratando mês
+                if(mes == 0) {
+                    mes_extenso = "Janeiro";
+                }
+                else if(mes == 1) {
+                    mes_extenso = "Fevereiro";
+                }
+                else if(mes == 2) {
+                    mes_extenso = "Março";
+                }
+                else if(mes == 3) {
+                    mes_extenso = "Abril";
+                }
+                else if(mes == 4) {
+                    mes_extenso = "Maio";
+                }
+                else if(mes == 5) {
+                    mes_extenso = "Junho";
+                }
+                else if(mes == 6) {
+                    mes_extenso = "Julho";
+                }
+                else if(mes == 7) {
+                    mes_extenso = "Agosto";
+                }
+                else if(mes == 8) {
+                    mes_extenso = "Setembro";
+                }
+                else if(mes == 9) {
+                    mes_extenso = "Outubro";
+                }
+                else if(mes == 10) {
+                    mes_extenso = "Novembro";
+                }
+                else if(mes == 11) {
+                    mes_extenso = "Dezembro";
+                }
+
+                //tratando dias de 1 à 9
+                if(dia < 10) {
+                    dia2 = "0" + dia;
+                }
+                else {
+                    dia2 = dia;
+                }
+
+                // criando string
+                let texto = dsemana + ", " + dia2 + " de " + mes_extenso + " de " + ano;
+
+
+                // criando elemento
+                let p = document.createElement("p");
+                let exibir = document.createTextNode(texto);
+                p.appendChild(exibir);
+                document.getElementById("mostrardata").appendChild(p);
+                
+            }
+        </script>
+    </div>
+</body>
+
+</html>

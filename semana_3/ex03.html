@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Semana 3</title>
+</head>
+
+<body>
+    <div class="index">
+        <h2>EXERCÍCIO 3</h2>
+        <hr>
+        <br>
+        <label for="palavra">Digite uma palavra:</label>
+        <br>
+        <input type="text" id="palavra">
+        <br>
+        <p id="mostrar_palindromo">
+
+        </p>
+
+
+
+        <br>
+        <a id="check_palindromo"><button>Checar</button></a>
+        <br><br>
+        <a href="semana3.html"><button>Menu</button></a>
+
+        <script>
+            
+
+            document.getElementById("check_palindromo").addEventListener("click", checkPalindromo);
+            function checkPalindromo() {
+                document.getElementById("mostrar_palindromo").innerHTML = "";
+                document.getElementById("palavra").innerHTML = "";
+                let palavra = document.getElementById("palavra").value;
+                let inverter = palavra.split("").reverse().join("");
+                let texto;
+
+                if (inverter == palavra) {
+                    texto = "A palavra " + palavra + " é um palíndromo";
+                }
+                else {
+                    texto = "A palavra " + palavra + " não é um palíndromo";
+                }
+                // criando elemento
+                let p = document.createElement("p");
+                let exibir = document.createTextNode(texto);
+                p.appendChild(exibir);
+                document.getElementById("mostrar_palindromo").appendChild(p);
+            }
+
+
+
+        </script>
+    </div>
+</body>
+
+</html>
