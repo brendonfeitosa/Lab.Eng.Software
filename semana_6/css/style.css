@@ -42,57 +42,8 @@ input {
     margin-top: 2px;
 }
 
-#nome {
-    width: 99%;
-}
-
-#email {
-    width: 500px;
-    
-}
-
-.sp-1 {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-}
-
-.sp-2 {
-    width: 99%;
-}
-
-
-.dadosetipo {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-}
-
-.inputemail, .inputdtnasc, .fixo, .celular, .tipo {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
-
-#datanasc {
-    width: 130%;
-    
-}
-
-.form {
-    text-align: left;
-    
-
-}
 
 .botao {
     text-align: center;
-}
-
-.inputs {
-    height: 80%;
 }
 

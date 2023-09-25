@@ -46,19 +46,19 @@
                             <input class="radio" type="radio" name="tipo" id="professor" value="professor">
                             <label for="professor">Professor</label>
                         </div>
-                        <div class="teste">
-                            <input class="radio" type="radio" name="tipo" id="aluno" value="aluno">
+                        <div>
+                            <input class="radio" type="radio" name="tipo" id="aluno" value="aluno" checked>
                             <label for="aluno">Aluno</label>
                         </div>
                     </div>
                 </div>
-
-
                 <br><br>
-                <label for="curso" id="curso">Curso:</label>
-                <br>
-                <input type="text" name="curso" id="curso" placeholder="Digite seu curso">
-                <br><br>
+                <div class="sp-2">
+                    <label for="curso" id="curso">Curso:</label>
+                    <br>
+                    <input type="text" name="curso" id="curso" placeholder="Digite seu curso">
+                    <br><br>
+                </div>
                 <label for="matriculaaluno" id="matriculaaluno">Matrícula:</label>
                 <br>
                 <input type="text" name="matriculaaluno" id="matriculaaluno" placeholder="Digite sua matrícula">
@@ -84,6 +84,8 @@
             </form>
         </div>
     </div>
+
+    <div id="result"></div>
     <script src="ex01.js">
 
     </script>
