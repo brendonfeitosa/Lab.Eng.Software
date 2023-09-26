@@ -4,91 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Semana 4</title>
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
+    <a href="../index.html">Voltar</a> <br /><br />
+
     <div class="index">
-        <h2>EXERCÍCIO 1</h2>
-        <hr>
-        <br>
-        <div class="form">
-            <form>
-                <label for="nome" id="nome">Nome:</label>
-                <br>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
-                <br><br>
-                <div class="sp-1">
-                    <div class="inputemail">
-                        <label for="email" id="email">E-mail:</label>
-                        <input type="email" name="email" id="email" placeholder="fulano@dominio.com">
+        <form>
+            <h1>Formulário de Cadastro:</h1>
+            <div class="input-name">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Digite seu nome completo" />
+            </div>
+            <div class="sep-1">
+                <div class="input-email">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" placeholder="email@dominio.com" />
+                </div>
+
+                <div class="input-data-nascimento">
+                    <label for="data-nascimento">Data Nascimento</label>
+                    <input type="date" id="data-nascimento" />
+                </div>
+            </div>
+            <div class="sep-2">
+                <div class="input-fixo">
+                    <label for="fixo">Telefone Fixo</label>
+                    <input type="text" id="fixo" placeholder="(99) 9999-9999" />
+                </div>
+
+                <div class="input-celular">
+                    <label for="celular">Telefone Celular</label>
+                    <input type="text" id="celular" placeholder="(99) 99999-9999" />
+                </div>
+
+                <div class="input-tipo">
+                    <input id="professor" type="radio" name="tipo-agente" value="professor" />
+                    <label for="professor">Professor</label> <br />
+
+                    <input id="aluno" type="radio" name="tipo-agente" value="aluno" />
+                    <label for="aluno">Aluno</label>
+                </div>
+            </div>
+            <div class="sep-3">
+                <div class="sub-sep-1">
+                    <div id="area-area" class="input-area hide-item">
+                        <label for="area">Área</label>
+                        <input type="text" id="area" placeholder="Digite sua área de atuação">
                     </div>
-                    <br><br>
-                    <div class="inputdtnasc">
-                        <label for="datanasc" id="datanasc">Data de nascimento:</label>
-                        <input type="date" name="datanasc" id="datanasc" placeholder="dd/mm/aaaa">
+
+                    <div id="area-curso" class="input-curso hide-item">
+                        <label for="curso">Curso</label>
+                        <input type="text" id="curso" placeholder="Digite seu curso" />
+                    </div>
+
+                    <div id="area-matricula" class="input-matricula hide-item">
+                        <label for="matricula">Matricula</label>
+                        <input type="text" id="matricula" placeholder="Digite sua matricula" />
                     </div>
                 </div>
-                <br><br>
-                <div class="dadosetipo">
-                    <div class="fixo">
-                        <label for="telfixo">Telefone fixo:</label>
-                        <input type="tel" name="telfixo" id="telfixo" placeholder="(99) 9999-9999">
-                    </div>
-                    <br>
-                    <div class="celular">
-                        <label for="telcelular">Telefone celular:</label>
-                        <input type="tel" name="telcelular" id="telcelular" placeholder="(99) 99999-9999">
-                    </div>
-                    <div class="tipo">
-                        <div>
-                            <input class="radio" type="radio" name="tipo" id="professor" value="professor">
-                            <label for="professor">Professor</label>
-                        </div>
-                        <div>
-                            <input class="radio" type="radio" name="tipo" id="aluno" value="aluno" checked>
-                            <label for="aluno">Aluno</label>
-                        </div>
-                    </div>
+                <div id="area-lattes" class="input-lattes hide-item">
+                    <label for="lattes">Lattes</label>
+                    <input type="text" id="lattes" placeholder="Digite aqui o endereço para seu Lattes">
                 </div>
-                <br><br>
-                <div class="sp-2">
-                    <label for="curso" id="curso">Curso:</label>
-                    <br>
-                    <input type="text" name="curso" id="curso" placeholder="Digite seu curso">
-                    <br><br>
-                </div>
-                <label for="matriculaaluno" id="matriculaaluno">Matrícula:</label>
-                <br>
-                <input type="text" name="matriculaaluno" id="matriculaaluno" placeholder="Digite sua matrícula">
-                <br><br>
-                <label for="area">Área:</label>
-                <br>
-                <input type="text" name="area" id="area" placeholder="Digite sua área de atuação">
-                <br><br>
-                <label for="matriculaprof" id="matriculaprof">Matrícula:</label>
-                <br>
-                <input type="text" name="matriculaprof" id="matriculaprof" placeholder="Digite sua matrícula">
-                <br><br>
-                <label for="lattes">Lattes:</label>
-                <br>
-                <input type="text" name="lattes" id="lattes" placeholder="Digite aqui o endereço para seu Lattes">
-                <br><br>
-                <div class="botao">
-                    <button id="enviar" name="enviar">Enviar</button>
-                    <button id="redefinir" name="redefinir">Redefinir</button>
-                    <a href="semana4.html"><button>Menu</button></a>
-                </div>
-                <br><br>
-            </form>
-        </div>
+            </div>
+            <br>
+            <a id="data"><button>Enviar</button></a>
+            <br><br>
+            <a href="./semana4.html"><button>Menu</button></a>
+        </form>
     </div>
-
-    <div id="result"></div>
-    <script src="ex01.js">
-
-    </script>
+    <script src="ex01.js"></script>
 </body>
 
 </html>
